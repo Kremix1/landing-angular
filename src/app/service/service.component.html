@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <section class="service">
+    <div class="service__header">
+      <p class="service__sub-h">{{'useful service available' | uppercase}}</p>
+      <h2 class="service__h">{{'service of credit card' | uppercase}}</h2>
+    </div>
+    <div class="service__main">
+      <img class="service__arrow service__arrow_left"
+           src="./assets/images/service/arrow-active.png" alt="arrow-left"
+           width="32" height="20"
+           (click)="slider.slideLeft()"
+      >
+      <div class="service__slider">
+        <div class="service__slider_line" style="left: 300px">
+          <div class="service__item" *ngFor="let item of slider.serviceItems">
+            <img class="service__img" src="./assets/images/service/{{item.image}}.png" alt='{{item.image}}'>
+            <p class="service__title">{{item.name}}</p>
+          </div>
+        </div>
+      </div>
+      <img class="service__arrow service__arrow_right"
+           src="./assets/images/service/arrow-active.png" alt="arrow-right"
+           width="32" height="20"
+           (click)="slider.slideRight()"
+      >
+    </div>
+  </section>
+</div>

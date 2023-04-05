@@ -1,0 +1,135 @@
+.wrapper {
+  width: 100%;
+  padding: 0 260px;
+  .disable{
+    pointer-events: none;
+    opacity: 0.4;
+  }
+  .service{
+    padding: 160px 0;
+    &__sub-h{
+      font-size: 24px;
+      line-height: 42px;
+      color: #808080;
+    }
+    &__h{
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0 0 70px 0;
+    }
+    &__main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+    &__arrow {
+      &:active{
+        transform: scale(1.3, -1, 1);
+      }
+      &_left{
+        transform: scale(-1, 1);
+      }
+    }
+    &__slider{
+      overflow: hidden;
+      &_line{
+        width: 1200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        transition: 1s ease;
+      }
+    }
+    &__item{
+      border: 1px solid rgba(4, 4, 4, 0.3);
+    }
+    &__img{
+
+    }
+    &__title{
+      padding: 30px 40px;
+      text-align: center;
+      font-size: 20px;
+      line-height: 42px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .wrapper{
+    .service{
+      &__slider{
+        width: 900px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .wrapper{
+    .service{
+      &__slider{
+        width: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .wrapper{
+    .service{
+      &__slider{
+        width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .wrapper{
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper{
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper{
+    .service{
+      &__header{
+        justify-content: center;
+        text-align: center;
+      }
+      &__main{
+        position: relative;
+      }
+      &__arrow{
+        position: absolute;
+        &_left{
+          bottom: -10%;
+          left: 30%;
+        }
+        &_right{
+          bottom: -10%;
+          right: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .wrapper{
+    padding: 0 10px;
+  }
+}
+
+

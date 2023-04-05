@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <header>
+    <nav class="nav">
+      <a class="nav__item nav__logo " href="#">
+        <img class="nav__logo_img" src="./assets/images/main-view/logo.svg" alt="logo"/>
+        <div class="nav__logo_text">
+          <p class="nav__logo_text nav__logo_text_main">DIGITAL BANKING</p>
+          <p class="nav__logo_text nav__logo_text_desc">Be Safe Banking</p>
+        </div>
+      </a>
+        <div class='${{
+        !menu ? "nav__item nav__item-group nav__item-group__item"
+        : "nav__item nav__item-group-mobile__item"}}'>
+          <a class="nav__item nav__item-group__item" href="#">CARDS</a>
+          <a class="nav__item nav__item-group__item" href="#">SERVICE</a>
+          <a class="nav__item nav__item-group__item" href="#">BANKING</a>
+          <a class="nav__item nav__item-group__item" href="#">FAQ</a>
+          <a class="nav__item  nav__item-group__item nav__item-group__item_account" href="#">Create Account</a>
+        </div>
+        <div class='${{!menu ? "nav__item nav__item_burger" : "nav__item nav__item_close"}}' (click)="toggleBurger()"></div>
+    </nav>
+</header>
+  <section class="main-view">
+    <h1 class="main-view__header">To Make Your Life Easier Take a Card</h1>
+    <p class="main-view__sub-header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus blanditiis consectetur consequuntur facilis nostrum perspiciatis quod repellat soluta, totam veritatis.</p>
+    <button class="main-view__button">{{'Apply now' | uppercase}}</button>
+    <div class="main-view__cards">
+      <img class="main-view__cards__item main-view__cards__item_left" src="./assets/images/main-view/card-left.png" alt="card"/>
+      <img class="main-view__cards__item main-view__cards__item_main" src="./assets/images/main-view/card-main.png" alt="card"/>
+      <img class="main-view__cards__item main-view__cards__item_right" src="./assets/images/main-view/card-right.png" alt="card"/>
+    </div>
+  </section>
+</div>
+
